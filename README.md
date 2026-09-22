@@ -10,7 +10,7 @@ An end-to-end **data analytics and machine learning solution** that analyses
 household characteristics and predicts monthly energy consumption (kWh) using
 five regression models. The entire project — data loading, EDA, preprocessing,
 model training, evaluation, and interactive prediction — runs from a **single
-Streamlit application** (`app.py`).
+Python file** (`Vijay_Kumar_Kushwaha_Energy Consumption Analysis.py`).
 
 Built as part of the **IBM SkillsBuild Data Analytics with AI Academic
 Internship Program** conducted by **BharatCares** in association with **AICTE**.
@@ -85,14 +85,14 @@ consumption in kWh.
 ## Project Structure
 
 ```
-Household-Energy-Analytics/
+Energy-Consumption-Analysis/
 │
-├── app.py                          ← Single file: frontend + backend
-├── Household energy unit data.csv  ← Dataset
-├── requirements.txt                ← Python dependencies
-├── README.md                       ← This file
-├── ProjectReport.docx              ← Full academic project report
-└── final_model.pkl                 ← Best model (auto-generated on first run)
+├── Vijay_Kumar_Kushwaha_Energy Consumption Analysis.py  ← Single file: frontend + backend
+├── Vijay_Kumar_Kushwaha_ProjectReport.docx              ← Full academic project report
+├── Household energy unit data.csv                       ← Dataset
+├── requirements.txt                                     ← Python dependencies
+├── README.md                                            ← This file
+└── final_model.pkl                                      ← Best model (auto-generated on first run)
 ```
 
 ---
@@ -119,8 +119,8 @@ pip install -r requirements.txt
 ### Option A — Interactive Streamlit Dashboard (recommended)
 
 ```bash
-# From the project folder (where app.py lives):
-streamlit run app.py
+# From the project folder:
+streamlit run "Vijay_Kumar_Kushwaha_Energy Consumption Analysis.py"
 ```
 
 Streamlit will open the application in your default browser at
@@ -142,7 +142,7 @@ Use the sidebar to jump between project sections:
 
 ```bash
 # Runs the full ML pipeline in the terminal and prints a training report
-python app.py --train
+python "Vijay_Kumar_Kushwaha_Energy Consumption Analysis.py" --train
 ```
 
 This mode:
@@ -232,12 +232,7 @@ variance; average prediction error ≈ **10.2 kWh/month**.
 
 | Field | Value |
 |-------|-------|
-| **Name** | [Your Name] |
-| **Institution** | [Your College / University] |
+| **Name** | Vijay Kumar Kushwaha |
+| **GitHub** | [vi-ja](https://github.com/vi-ja) |
 | **Program** | IBM SkillsBuild Data Analytics with AI Academic Internship |
 | **Organisation** | BharatCares in association with AICTE |
-| **Email** | [your.email@example.com] |
-
----
-
-*Replace all placeholder values in `[ ]` brackets before final submission.*
